@@ -1,0 +1,37 @@
+{
+  "disorders": [
+    {
+      "name": "Depression",
+      "description": "A common mental disorder characterized by persistent sadness and loss of interest in activities.",
+      "remedies": [
+        "Consult with a mental health professional",
+        "Consider cognitive behavioral therapy",
+        "Regular physical exercise",
+        "Maintain social connections",
+        "Practice mindfulness and meditation"
+      ]
+    },
+    {
+      "name": "Anxiety",
+      "description": "Excessive worry or fear that interferes with daily activities.",
+      "remedies": [
+        "Practice deep breathing exercises",
+        "Limit caffeine intake",
+        "Establish a regular sleep routine",
+        "Try progressive muscle relaxation",
+        "Consider therapy options"
+      ]
+    },
+    {
+      "name": "Stress",
+      "description": "Physical or emotional tension resulting from challenging circumstances.",
+      "remedies": [
+        "Practice time management",
+        "Engage in regular physical activity",
+        "Learn to say no to excessive demands",
+        "Practice relaxation techniques",
+        "Maintain work-life balance"
+      ]
+    }
+  ]
+}

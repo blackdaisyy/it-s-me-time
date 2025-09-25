@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  background-image: url(couple-7231599_640.jpg);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.screen {
+  display: none;
+  flex: 1;
+}
+
+.screen.active {
+  display: block;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn-primary,
+.btn-secondary,
+.answer-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+.answer-btn {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.answer-btn:hover {
+  background-color: #bdc3c7;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.btn-back:hover {
+  text-decoration: underline;
+}
+
+#questionContainer {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#questionText {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#progress {
+  margin-top: 20px;
+  color: #7f8c8d;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#searchResults {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.result-card {
+  background: #ecf0f1;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+}

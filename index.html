@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Me Time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>It's Me Time</h1>
+            <p>Your mental health assesor</p>
+        </header>
+
+        <main>
+              <!--Welcome Screen -->
+            <div id="welcomeScreen" class="screen active">
+                <h2>How would you like to start?</h2>
+                <div class="button-group">
+                    <button id="startAssessment" class="btn-primary">Take Assessment</button>
+                    <button id="showSearch" class="btn-secondary">Search Disorder</button>
+                </div>
+            </div>
+
+            <!-- Assessment Screen -->
+            <div id="assessmentScreen" class="screen">
+                <h2>Mental Health Assessment</h2>
+                <div id="questionContainer">
+                    <p id="questionText"></p>
+                    <div class="button-group">
+                        <button class="answer-btn" data-answer="yes">Yes</button>
+                        <button class="answer-btn" data-answer="no">No</button>
+                        <button class="answer-btn" data-answer="unsure">Unsure</button>
+                    </div>
+                    <p id="progress">Question 1 of 5</p>
+                </div>
+                <button id="backToWelcome" class="btn-back"> Back</button>
+            </div>
+
+            <!-- Search Screen -->
+            <div id="searchScreen" class="screen">
+                <h2>Search for a Disorder</h2>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Enter disorder name...">
+                    <button id="searchBtn">Search</button>
+                </div>
+                <div id="searchResults"></div>
+                <button id="backFromSearch" class="btn-back"> Back</button>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="resultsScreen" class="screen">
+                <h2>Your Results</h2>
+                <div id="resultContent"></div>
+                <button id="restartBtn" class="btn-primary">Start Over</button>
+            </div>
+        </main>
+
+        <footer>
+            <p><strong>Disclaimer:</strong> This doesn't act like a certified mental health assesor</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
