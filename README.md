@@ -13,11 +13,11 @@ Responsive layout for mobile and desktop Uses external JSON db.json to load diso
 
 
 ## Project Structure
-index.html used as the main HTML file
-style.css used to apply style
-script.js used as JavaScript function
-db.json used as the mental health disorder data
-README.md used as the Project documentation
+index.html used as the main HTML file.
+style.css is used to apply style.
+script.js is used as JavaScript function.
+db.json is used as the mental health disorder data.
+README.md is used as the Project documentation.
 
 
 
